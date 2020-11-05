@@ -1,0 +1,136 @@
+
+body {
+    background-image: url(images/background_header.jpg);
+    background-size: 55%;
+    background-position: right;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    position: relative;
+ }
+ 
+ .fondo {
+    width: 600px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-left: 0px solid transparent;
+    border-bottom: 510px solid #db5461;
+    top: -10px;
+    left: -10px;
+    position: relative;
+ }
+    
+.titulo {
+    color: #30343f;
+ }
+
+ h1 {
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 250px;
+    left: 60px;
+}
+
+.lista li{ 
+    color: #30343f;
+    text-decoration: none;
+    display: inline; 
+    padding-right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.lista {
+    position: absolute;
+    padding-top: 10px;
+    top: 60px;
+    right: 50px;
+    width: 330px;
+    height: 30px;    
+    background-color: white;
+    box-shadow: 1px 1px 5px #30343f;
+    position: absolute;
+    font-weight: bold;
+}
+
+.logo {
+    padding-left: 60px;
+    padding-top: 60px;
+}
+
+.button {
+    width: 160px;
+    height: 40px;
+    background-color: white;
+    color: #30343f;
+    border-radius: 20px;
+    margin-left: 60px;
+    margin-top: 350px;
+    border-color: #30343f;
+    box-shadow: 1px 1px 5px #30343f;
+    border-width: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 30px;
+}
+
+#footer {
+    background-color: #30343f;
+    width: 100%;
+    height: 125px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -10px;
+    left: -10px;
+
+}
+
+#footertext {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    left: 75px;
+    top: -60px;
+    
+}
+#footer div{
+    justify-content: center;
+}
+p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-weight: lighter;
+    position: relative;
+    left: 75px;
+    top: 0px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:360px) {
+    #footer {
+        display: flex;
+        position: relative;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    h1 {
+        
+        font-size: 15px;
+    }
+    #footer div{
+        justify-content: row;
+        flex-direction: column;
+    }
+    
+}
