@@ -76,6 +76,13 @@ body {
     position: absolute;
     top: 30px;
 }
+footer {
+    width: 100%;
+    position: relative;
+    background: #30343f;
+    left: -10px;
+    top: -10px;
+}
 
 #footer {
     background-color: #30343f;
@@ -83,9 +90,7 @@ body {
     height: 125px;
     display: flex;
     justify-content: space-around;
-    position: relative;
-    top: -10px;
-    left: -10px;
+    position: absolute;
 
 }
 
@@ -121,7 +126,7 @@ p {
         position: relative;
         height: 100%;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
     }
     h1 {
