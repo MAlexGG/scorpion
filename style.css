@@ -77,7 +77,7 @@ body {
     top: 30px;
 }
 footer {
-    width: 100%;
+    width: 105%;
     position: relative;
     background: #30343f;
     left: -10px;
@@ -94,18 +94,17 @@ footer {
 
 }
 
-#footertext {
+.footertext {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-weight: bold;
     position: relative;
-    left: 75px;
-    top: -60px;
-    
 }
-#footer div{
+#footer div p{
+    display: flex;
     justify-content: center;
+    align-items: flex-end;
 }
 p {
     font-size: 16px;
@@ -113,11 +112,9 @@ p {
     color: gray;
     font-weight: lighter;
     position: relative;
-    left: 75px;
-    top: 0px;
     letter-spacing: 1px;
-    display: flex;
-    justify-content: center;
+    top: -50px;
+    display: grid;
 }
 .menú {
     display: none;
@@ -150,7 +147,8 @@ p {
         position: absolute;
         top: 60px;
         right: 35px;
-        
- 
+    }
+    body {
+        width: 100%;
     }
 }
