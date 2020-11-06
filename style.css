@@ -3,24 +3,10 @@ body {
     background-image: url(images/background_header.jpg);
     background-size: 55%;
     background-position: right;
+    right: 0px;
     background-position-y: 0px;
     background-repeat: no-repeat;
     position: relative;
- }
- 
- .fondo {
-    width: 600px;
-    height: 0px;
-    border-right: 100px solid transparent;
-    border-left: 0px solid transparent;
-    border-bottom: 510px solid #db5461;
-    top: -10px;
-    left: -10px;
-    position: relative;
- }
-    
-.titulo {
-    color: #30343f;
  }
 
  h1 {
@@ -31,6 +17,38 @@ body {
     top: 250px;
     left: 60px;
 }
+
+p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-weight: lighter;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+footer {
+    width: 105%;
+    position: relative;
+    background: #30343f;
+    left: -10px;
+    top: -10px;
+}
+
+ .fondo {
+    width: auto;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-left: 0px solid transparent;
+    border-bottom: 510px solid #db5461;
+    top: -10px;
+    left: -10px;
+    position: relative;
+ }
+
+.titulo {
+    color: #30343f;
+ }
 
 .lista li{ 
     color: #30343f;
@@ -76,23 +94,6 @@ body {
     position: absolute;
     top: 30px;
 }
-footer {
-    width: 105%;
-    position: relative;
-    background: #30343f;
-    left: -10px;
-    top: -10px;
-}
-
-#footer {
-    background-color: #30343f;
-    width: 100%;
-    height: 125px;
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-
-}
 
 .footertext {
     font-size: 16px;
@@ -101,44 +102,53 @@ footer {
     font-weight: bold;
     position: relative;
 }
-#footer div p{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-p {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: gray;
-    font-weight: lighter;
-    position: relative;
-    letter-spacing: 1px;
-    top: -50px;
-    display: grid;
-}
+
 .menú {
     display: none;
 } 
+
+#footer {
+    background-color: #30343f;
+    width: 100%;
+    height: 125px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+}
+
+#footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#footer div div {
+    display: flex;
+    justify-content: center;
+    line-height: 15%;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footer div img {
+    padding: 10px;
+}
+
 @media screen and (max-width:360px) {
-    #footer {
-        display: flex;
-        position: relative;
-        height: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
     h1 {
-        
         font-size: 15px;
     }
-    #footer div{
-        justify-content: row;
-        flex-direction: column;
+
+    body {
+        width: 100%;
     }
+
     .lista {
         display: none;
      } 
+
     .menú {
         background: white;
         width: 50px;
@@ -148,7 +158,19 @@ p {
         top: 60px;
         right: 35px;
     }
-    body {
-        width: 100%;
+
+    #footer {
+        display: flex;
+        position: relative;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+    
+    #footer div{
+        justify-content: row;
+        flex-direction: column;
+    }
+
 }
