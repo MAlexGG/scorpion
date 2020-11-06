@@ -1,4 +1,3 @@
-
 body {
     background-image: url(images/background_header.jpg);
     background-size: contain;
@@ -42,8 +41,6 @@ footer {
     border-right: 100px solid transparent;
     border-left: 0px solid transparent;
     border-bottom: 510px solid #db5461;
-    top: -10px;
-    left: -10px;
     position: relative;
  }
 
@@ -130,7 +127,7 @@ footer {
     flex-direction: row;
 }
 
-#footer div p{
+#footer div div {
     display: flex;
     justify-content: center;
     line-height: 15%;
