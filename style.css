@@ -3,10 +3,11 @@ body {
     background-image: url(images/background_header.jpg);
     background-size: contain;
     background-position: right;
-    right: 0px;
+    padding-right: 0px;
     background-position-y: 0px;
     background-repeat: no-repeat;
     position: relative;
+    height: 100%;
  }
 
 h1 {
@@ -36,7 +37,7 @@ footer {
 }
 
  .fondo {
-    width: auto;
+    width: 50%;
     height: 0px;
     border-right: 100px solid transparent;
     border-left: 0px solid transparent;
@@ -148,7 +149,7 @@ footer {
     }
 
     body {
-        background-size: 200%;
+        background-size: cover;
     }
 
     .lista {
@@ -167,9 +168,11 @@ footer {
         position: absolute;
         top: 50px;
         right: 35px;
-        
     }
-
+    .menú:hover{
+        background-color: #30343f;
+        color: white;
+    }
     #footer {
         display: flex;
         position: relative;
@@ -185,14 +188,22 @@ footer {
     padding:10px ;
     }
 
-        .fondo {
+    .fondo {
         right: 0px;
+        width: auto;
     }
 
     .logo {
         width: 100px;
-        padding-left: 60px;
-        padding-top: 60px;
-
-
+        left: 60px;
+        top: 60px;
+        animation-name: logo;
+        animation-duration: 4s;
+    }
+    
+    @keyframes logo {
+        50% {
+            transform: scale(1.5)
+        }
+    }
 }
