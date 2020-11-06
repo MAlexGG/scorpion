@@ -7,7 +7,8 @@ body {
     background-position-y: 0px;
     background-repeat: no-repeat;
     position: relative;
-    height: 100%;
+    height: 100vh;
+    margin: 0px;
  }
 
 h1 {
@@ -29,14 +30,13 @@ p {
 }
 
 footer {
-    width: 105%;
+    width: 100%;
     position: relative;
     background: #30343f;
-    left: -10px;
-    top: -10px;
+    bottom: 0px;
 }
 
- .fondo {
+.fondo {
     width: 50%;
     height: 0px;
     border-right: 100px solid transparent;
@@ -120,7 +120,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: absolute;
+    position: relative;
 }
 
 #footer div {
@@ -130,7 +130,7 @@ footer {
     flex-direction: row;
 }
 
-#footer div div {
+#footer div p{
     display: flex;
     justify-content: center;
     line-height: 15%;
@@ -149,7 +149,7 @@ footer {
     }
 
     body {
-        background-size: cover;
+        background-size: auto;
     }
 
     .lista {
@@ -172,7 +172,8 @@ footer {
     .menú:hover{
         background-color: #30343f;
         color: white;
-    }
+    } 
+    
     #footer {
         display: flex;
         position: relative;
