@@ -1,7 +1,7 @@
 
 body {
     background-image: url(images/background_header.jpg);
-    background-size: 55%;
+    background-size: 100%;
     background-position: right;
     right: 0px;
     background-position-y: 0px;
@@ -9,7 +9,7 @@ body {
     position: relative;
  }
 
- h1 {
+h1 {
     color: white;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
@@ -142,7 +142,7 @@ footer {
     }
 
     body {
-        width: 100%;
+        background-size: 200%;
     }
 
     .lista {
@@ -171,6 +171,13 @@ footer {
     #footer div{
         justify-content: row;
         flex-direction: column;
+    padding:10px ;
     }
+
+
+    .fondo {
+        right: 0px;
+    }
+
 
 }
