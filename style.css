@@ -1,7 +1,7 @@
 
 body {
     background-image: url(images/background_header.jpg);
-    background-size: 100%;
+    background-size: contain;
     background-position: right;
     right: 0px;
     background-position-y: 0px;
@@ -95,6 +95,11 @@ footer {
     top: 30px;
 }
 
+.button:hover {
+    background-color: #30343f;
+    color: white;
+}
+
 .footertext {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -138,7 +143,8 @@ footer {
 
 @media screen and (max-width:360px) {
     h1 {
-        font-size: 15px;
+        font-size: 24px;
+        left: 30px;
     }
 
     body {
@@ -151,12 +157,17 @@ footer {
 
     .menú {
         background: white;
+        background-image: url(images/view_headline-24px.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         width: 50px;
         height: 50px;
         display: block;
         position: absolute;
-        top: 60px;
+        top: 50px;
         right: 35px;
+        
     }
 
     #footer {
@@ -174,10 +185,14 @@ footer {
     padding:10px ;
     }
 
-
-    .fondo {
+        .fondo {
         right: 0px;
     }
+
+    .logo {
+        width: 100px;
+        padding-left: 60px;
+        padding-top: 60px;
 
 
 }
